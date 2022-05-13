@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #2F8F9D;
+    --hover-color: #fff;
+    --section-color: #d6e6fd;
+
+}
+
+body,
+header {
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: #112b3c;
+}
+
+/* setting a width */
+#content {
+    max-width: 1600px;
+     margin: 0 auto;
+
+}
+
+
+nav a:hover{
+    color: var(--hover-color);
+}
+
+nav a,
+#hero-msg h1, 
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+
+/* PAREI NO PASSO 13 */
+
+#background {
+    height: 725px;
+    background-color:var(--section-color);
+}
+
+.book, 
+.join {
+    background-color: #b3e8e5;
+}
+
+.book:hover, 
+.join:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+}
+
+.msg {
+    background-color: var(--section-color) ;
+}
+
+footer {
+    background-color: #205375;
+}
