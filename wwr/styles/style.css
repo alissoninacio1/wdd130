@@ -1,5 +1,6 @@
+/* some general styles */
 :root {
-    --primary-color: #2F8F9D;
+    --primary-color: #6dbdc9;
     --hover-color: #fff;
     --section-color: #d6e6fd;
 
@@ -12,19 +13,31 @@ header {
 
 a {
     text-decoration: none;
-    color: #112b3c;
+    color: #ffffff;
+}
+
+
+.home-title,
+h4 {
+    color: var(--hover-color);
 }
 
 /* setting a width */
 #content {
     max-width: 1600px;
      margin: 0 auto;
+}
 
+.logo,
+.icon {
+    width: 80px;
 }
 
 
-nav a:hover{
-    color: var(--hover-color);
+nav a:hover,
+footer a:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
 }
 
 nav a,
@@ -36,8 +49,6 @@ main section {
 }
 
 
-/* PAREI NO PASSO 13 */
-
 #background {
     height: 725px;
     background-color:var(--section-color);
@@ -46,6 +57,7 @@ main section {
 .book, 
 .join {
     background-color: #b3e8e5;
+    text-align: center;
 }
 
 .book:hover, 
@@ -58,6 +70,24 @@ main section {
     background-color: var(--section-color) ;
 }
 
+.msg p,
+.msg h2 {
+    color: #242424;
+}
+
 footer {
     background-color: #205375;
+}
+
+footer h3 {
+    color: #000000;
+}
+
+footer h3:hover {
+    text-decoration: underline;
+}
+
+/* step 15 - adding text align center */
+footer a {
+    text-align: center;
 }
