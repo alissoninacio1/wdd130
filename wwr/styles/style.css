@@ -70,7 +70,7 @@ nav a:hover {
     background-color: var(--hover-color);
 }
 
-/* -------------HERO AND MAIN SECTION----------------------- */
+/* -------------HERO DIV----------------------- */
 .icon {
     padding-top: 10px;
 }
@@ -83,6 +83,17 @@ main section {
 }
 
 
+/* --------------- MAIN----------------------- */
+
+
+main section img {
+    box-sizing: border-box;
+}
+
+.card-img {
+    border: 10px solid var(--hover-color);
+}
+
 #background {
     height: 725px;
     background-color:var(--section-color);
@@ -91,10 +102,13 @@ main section {
 .book, 
 .join {
     background-color: #b3e8e5;
+    color: black;
     text-align: center;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
+
+    border-radius: 5px;
 }
 
 .book:hover, 
@@ -119,11 +133,17 @@ main section {
     color: #242424;
 }
 
+.rivers-cars,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
 
 /* ---------------FOOOTER STYLES---------------- */
 footer {
     background-color: #205375;
     padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3 {
