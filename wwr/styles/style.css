@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
 
 
 /* --------------GENERAL STYLES -------------- */
@@ -17,6 +17,7 @@ body {
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* -----------------HEADER SECTION------------------ */
@@ -36,6 +37,7 @@ h2 {
 a {
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .home-title {
@@ -75,6 +77,12 @@ nav a:hover {
     padding-top: 10px;
 }
 
+#hero-img {
+    display:block;
+    margin: auto;
+    width: 100%;
+}
+
 #hero-msg h1, 
 #hero-msg h4,
 .button-box,
@@ -92,6 +100,8 @@ main section img {
 
 .card-img {
     border: 10px solid var(--hover-color);
+    display: inline-block;
+    margin: 1.5rem auto auto 3rem;
 }
 
 #background {
