@@ -17,7 +17,7 @@
    <li>Demonstrate basic proficiency in using current valid Cascading Style Sheets (CSS) to style an HTML document. </li>
    <li>Plan, design, and develop web pages and sites according to best practices of organization and maintainability. </li>
    <li>Discover and analyze the web design and development industry as a career path. </li>
-   <li>Work effectively with others by communicating clearly, collaborating as a team member, fulfilling assignments and meeting deadlines. </li>
+   <li>Work effectively with others by communicating clearly, collaborating as a team member, fulfilling assignments and meeting deadlines.. </li>
 </ul>
 
 <br>
