@@ -22,5 +22,6 @@
 
 <br>
 <p>
+ 
  Course Syllabus: https://byui.instructure.com/courses/52042/assignments/syllabus
 </p>
