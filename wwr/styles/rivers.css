@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+
+/* --------------GENERAL STYLES -------------- */
+:root {
+    --primary-color: #6dbdc9;
+    --header-background-opacity: rgb(109, 189, 201, 0.1);
+    --hover-color: #fff;
+    --section-color: #d6e6fd;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+
+    font-size: 22px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* -----------------HEADER SECTION------------------ */
+
+header {
+    background: var(--header-background-opacity);/* only background, without background-color, using rgba, will allow me use the header with opacity but with all texts visible  */
+    display: grid;
+    grid-template-columns: 150px auto;  /* two columns, one with 150px and another with the space available */
+    
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.home-title,
+h4 {
+    color: var(--hover-color);
+}
+
+/* setting a width */
+#content {
+    max-width: 1600px;
+     margin: 0 auto;
+}
+
+.logo,
+.icon {
+    width: 80px;
+}
+
+nav a {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-radius: 15px;
+    transition: all ease-in .3s;
+}
+
+
+
+
+
+
+
+/* ---------------FOOOTER STYLES---------------- */
+footer {
+    background-color: #205375;
+    padding: 25px 50px;
+    margin-top: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: #000000;
+}
+
+footer h3:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer a {
+    text-align: center;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+
+
+.social a:nth-child(1):hover,
+.social a:nth-child(2):hover,
+.social a:nth-child(3):hover{
+    background-color: transparent; 
+    opacity: 0.80;
+}
