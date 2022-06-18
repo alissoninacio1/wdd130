@@ -146,6 +146,8 @@ main section {
 main {
     background-color: var(--section-color);
     margin: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
 }
 
 main #rivers-text {
@@ -165,6 +167,34 @@ main #rivers-text p {
     font-size: 1rem;
 }
 
+
+#gallery {
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: -5rem;
+}
+
+.content-img {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem ;
+}
+.content-img img {
+    width: 25%;
+
+    border: 10px solid #d9c2a3;
+    transition: transform .3s ease-in-out;
+    box-shadow: 5px 5px 10px #6f7364;
+    
+}
+
+.content-img img:hover {
+    opacity: .9;
+    transform: rotate(3deg) scale(1.1);
+}
 
 /* ---------------FOOOTER STYLES---------------- */
 footer {
