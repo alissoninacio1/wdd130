@@ -109,6 +109,7 @@ nav a:hover {
     display:block;
     margin: auto;
     width: 100%;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 #hero-msg {
@@ -167,6 +168,12 @@ main #rivers-text p {
     font-size: 1rem;
 }
 
+hr {
+    width: 100px;
+    border: 10px dotted var(--primary-color);
+    border-top: none;
+    border-inline: none;
+}
 
 #gallery {
     border-radius: 20px;
@@ -236,4 +243,85 @@ footer a:hover {
 .social a:nth-child(3):hover{
     background-color: transparent; 
     opacity: 0.80;
+}
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .button-box {
+        display: none;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+        margin-right: 8rem;
+
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 2rem;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    
+    main #rivers-text p {
+        font-size: 0.8rem;
+    }
+    main #rivers-text h2,
+    #gallery h2  {
+        font-size: 1.3rem;
+    }
+
+    main #rivers-text h4 {
+        font-size: 1rem;
+    }
+
+    hr {
+        width: 100px;
+        border:8px dotted var(--primary-color);
+        border-top: none;
+        border-inline: none;
+    }
+
+    .content-img {
+        justify-content: center;
+
+    }
+    .content-img img {
+        width: 85%;
+    }
+
+    .content-img img:last-child {
+        margin-bottom: 1rem;
+    }
+ 
+
+    footer {
+        margin-top: 25px;
+        font-size: 1rem;
+    }
+
 }
