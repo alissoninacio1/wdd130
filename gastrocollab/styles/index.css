@@ -26,7 +26,7 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem; 
+    gap: 3rem; 
     background-color: var(--accent1-color);
 }
 
@@ -138,6 +138,7 @@ main #title-container {
    display: flex;
    justify-content: space-between;
    gap: 2rem;
+   z-index: 1;
 }
 
 main #title-container .text-box {
@@ -166,10 +167,13 @@ main #title-container .text-box h1 {
 }
 
 main #title-container .text-box p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: var(--paragraph-font);
     text-align: left;
-    padding: 1rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    border-radius: 30px 4px 30px 4px;
 }
 
 
@@ -183,21 +187,57 @@ main #title-container .text-box p {
 
 main #status {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
     gap: 2rem;
     z-index: -1;
-
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    margin-top: -3.2rem;
+    padding-top: 4rem;
 }
 
 
 main #status .stat {
     padding: 1rem;
     background-color: var(--secondary-color);
-    border-inline: 1px solid var(--primary-color);
+  
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
 
+
+main #status .stat h4 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 2rem;
+    line-height: 100%;
+    padding: 1rem;
+    
+}
+
+main #status .stat p {
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+main #status .stat hr {
+    border-bottom: 1px solid var(--primary-color);
+    margin-top: 0.8rem;
+    max-width: 35%;
+    margin-inline: auto;
+}
+
+
+/* ---main gallery-- */
+main #gallery-area {
+    margin: 1rem;
+    background-color: var(--accent2-color);
+}
 
 
 
@@ -272,6 +312,31 @@ main #status .stat {
         width: 70%;
         height: 70%;
         margin: 0 auto;
+    }
+
+    /* ---main status-- */
+    main #status {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        gap: 2rem;
+        z-index: -1;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+        margin-top: -3.2rem;
+        padding-top: 4rem;
+    }
+
+    main #status .stat {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        max-width: 70%;
+    }
+
+    main #status .stat p {
+        font-size: 1rem;
+        
     }
 }
 
