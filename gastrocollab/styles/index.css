@@ -33,7 +33,7 @@ body {
 
 
 main {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
 
@@ -52,13 +52,14 @@ a {
     color: var(--nav-link-color);
 }
 
-/* ----------HEADER---------- */
+/* ------------------------HEADER---------------------- */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
     flex-wrap: wrap;
+    
 }
 
 header .icon {
@@ -90,6 +91,8 @@ header nav a {
 
     /* this is used, because we don't want to change the box size when hover */
     line-height: 1.7rem;  
+
+    text-align: center;
 }
 
 header nav a:hover {
@@ -101,7 +104,7 @@ header .gallery-button button {
     margin-right: 0.5rem;
     padding: 0.4rem;
     border-radius: 0.4rem;
-    border: 2px solid var(--nav-link-color);
+    border: none;
     background-color: var(--secondary-color);
  
     font-size: 1rem;
@@ -122,35 +125,78 @@ header .gallery-button button a:hover {
 }
 
 
-/*---------  MAIN   -----------------*/
+/*--------- ------------- MAIN ---------  -----------------*/
 
 main {
     margin-inline: 0.5rem;
 }
 
+/* title container */
 main #title-container {
-   margin: 1rem;
+   margin: 0.4rem;
+   padding: 0.4rem;
    display: flex;
    justify-content: space-between;
+   gap: 2rem;
 }
 
-header #title-container .text-box {
-    grid-area: A;
+main #title-container .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 1.5rem;
+    max-width: 65%;
 }
 
-header #title-container .text-box p {
-    max-width: 10rem;
+main #title-container .text-box h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    text-align: left;
+    text-transform: uppercase;
+
+}
+main #title-container .text-box h1 {
+    font-size: 5rem;
+    color: var(--accent2-color);
+    line-height: 100%;
+    font-family: var(--heading-font);
+    text-align: center;
+
 }
 
-header #title-container .image-one {
-    grid-area: B;
+main #title-container .text-box p {
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+    text-align: left;
+    padding: 1rem;
 }
+
 
 #title-container .image-one img {
-    display: block;
-    width: 75%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
 }
 
+/* --status section-- */
+
+main #status {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    z-index: -1;
+
+}
+
+
+main #status .stat {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-inline: 1px solid var(--primary-color);
+}
 
 
 
@@ -158,14 +204,15 @@ header #title-container .image-one {
 
 /* ----------MEDIA QUERIES---------- */
 
-@media screen and (max-width: 950px) { 
+@media screen and (max-width: 1100px) { 
 
+    /* ----body general rule--- */
     body {
         display: flex;
         flex-direction: column;
     }
 
-    body,
+    /* ---header--- */
     header {
         flex-direction: column;
     }
@@ -195,6 +242,37 @@ header #title-container .image-one {
     header .gallery-button button {
         margin: 0.4rem;
     }
+
+    /* title-container */
+    main #title-container {
+        flex-direction: column;
+    }
+
+    main #title-container .text-box {
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    main #title-container .text-box h3 {
+        font-size: 1.1rem;   
+    }
+    main #title-container .text-box h1 {
+        font-size: 3.8rem;
+    
+    }
+    
+    main #title-container .text-box p {
+        font-size: 1rem;
+    }
+    
+    
+    #title-container .image-one img {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* ------------mobile devices-------- */
@@ -203,4 +281,3 @@ header #title-container .image-one {
         flex-direction: column;
     }
 }
-
