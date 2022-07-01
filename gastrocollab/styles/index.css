@@ -1,3 +1,5 @@
+/* ---------------GENERAL RULES---------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,700&family=Work+Sans:wght@300;400;500&display=swap');
 
 :root {
@@ -6,13 +8,163 @@
   --accent1-color: #E3FCBF;
   --accent2-color: #343a40;
 
+  --nav-link-color: #fff;
+
   --heading-font: 'Merriweather', serif;
   --paragraph-font: 'Work Sans', sans-serif;
 }
 
-/* general GRID */
+
+
+/* ---------general GRID rules------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 
 body {
     display: grid;
-    grid: area;
+    grid-template-areas: 'H'
+                   'M'
+                   'F';
+    gap: 2rem;
+    background-color: var(--accent1-color);
+}
+
+header {
+    grid-area: H;
+}
+
+main {
+    grid-area: M;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    grid-area: F;
+}
+
+header, 
+footer {
+    background-color: var(--primary-color);
+}
+
+header,
+main {
+    box-shadow: 2px 2px 5px var(--accent2-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+/* ----------HEADER---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+header .icon {
+    margin: 0.5rem;
+}
+
+header .icon a img {
+    display: block;
+    width: 75%;
+}
+
+header .icon a img:hover {
+    width: 76%;
+    transition: ease-out .2s;
+}
+
+header nav {
+    display: flex;
+    margin-left: 14rem;
+}
+
+header nav a {
+    padding: 2rem;
+
+    font-size: 1.6rem;
+    font-style: var(--heading-font);
+
+    transition: all ease-in .2s;
+
+    /* this is used, because we don't want to change the box size when hover */
+    line-height: 1.7rem;  
+}
+
+header nav a:hover {
+    font-size: 1.7rem;
+    color: var(--accent1-color);
+}
+
+header .gallery-button button {
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: 2px solid var(--nav-link-color);
+    background-color: var(--secondary-color);
+ 
+    font-size: 1rem;
+}
+
+header .gallery-button button:hover {
+    background-color: var(--accent2-color);
+}
+
+header .gallery-button button a {
+    color: var(--accent2-color);
+    padding: 0.3rem;
+}
+
+header .gallery-button button a:hover {
+    color: var(--nav-link-color);
+    transition: all .2s;
+}
+
+
+
+/* ----------MEDIA QUERIES---------- */
+
+@media screen and (max-width: 900px) { 
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body,
+    header,
+    header nav {
+        flex-direction: column;
+    }
+
+    header .icon a img {
+        display: none;
+    }
+
+    header nav {
+        margin: 0;
+    }
+
+    header nav a {
+        padding: 0.4rem;
+        font-size: 1.4rem;
+        line-height: 1.4rem;  
+    }
+
+    header nav a:hover {
+        font-size: 1.4rem;
+    }
+
+    header .gallery-button button {
+        margin: 0.4rem;
+    }
 }
