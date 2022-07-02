@@ -132,14 +132,6 @@ header .gallery-button a:hover {
     transition: all .2s;
 }
 
-/* header .gallery-button button a {
-   
-    padding: 0.3rem;
-}
-
-header .gallery-button button a:hover {
-
-} */
 
 
 /*--------- ------------- MAIN ---------  -----------------*/
@@ -156,7 +148,17 @@ main #title-container {
    justify-content: space-between;
    gap: 2rem;
    z-index: 1;
+   position: relative;
 }
+
+/* 
+when I add scroll Reveal, I had problems with my z-index
+so I searched for information
+https://www.freecodecamp.org/news/4-reasons-your-z-index-isnt-working-and-how-to-fix-it-coder-coder-6bc05f103e6c/
+
+I just add position:relative; above - 
+According to this rule, positioned elements will display on top of unpositioned elements.
+*/
 
 main #title-container .text-box {
     display: flex;

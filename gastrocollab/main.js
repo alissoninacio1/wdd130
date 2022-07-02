@@ -1,6 +1,6 @@
 ScrollReveal({
     origin: 'left',
-    distance:'30px', //aqui nao tem problema em se usar uma unidade fixa
+    distance:'30px', 
     duration: '600',
 }).reveal(`
     header, 
@@ -11,7 +11,6 @@ ScrollReveal({
     main #gallery-area,
     main #gallery-area #gallery,
     main #gallery-area .p-quote,
-    footer,
-    footer,
+    footer .icon,
     footer nav,
     footer .social`);
