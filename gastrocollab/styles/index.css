@@ -52,36 +52,43 @@ a {
     color: var(--nav-link-color);
 }
 
-/* ------------------------HEADER---------------------- */
 
-header {
+/* header y footer */
+
+header,
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
-header .icon {
+
+header .icon,
+footer .icon {
     margin: 0.5rem;
 }
 
-header .icon a img {
+header .icon a img,
+footer .icon a img {
     display: block;
     width: 75%;
 }
 
-header .icon a img:hover {
+header .icon a img:hover,
+footer .icon a img:hover {
     width: 76%;
     transition: ease-out .2s;
 }
 
-header nav {
+header nav,
+footer nav {
     display: flex;
     margin-left: 14rem;
 }
 
-header nav a {
+header nav a,
+footer nav a {
     padding: 2rem;
 
     font-size: 1.6rem;
@@ -95,34 +102,40 @@ header nav a {
     text-align: center;
 }
 
-header nav a:hover {
+header nav a:hover,
+footer nav a:hover {
     font-size: 1.7rem;
     color: var(--accent1-color);
 }
 
-header .gallery-button button {
+
+/* ------------------------HEADER---------------------- */
+
+header .gallery-button a {
     margin-right: 0.5rem;
     padding: 0.4rem;
     border-radius: 0.4rem;
     border: none;
+    color: var(--accent2-color);
     background-color: var(--secondary-color);
  
     font-size: 1rem;
 }
 
-header .gallery-button button:hover {
+header .gallery-button a:hover {
     background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    transition: all .2s;
 }
 
-header .gallery-button button a {
-    color: var(--accent2-color);
+/* header .gallery-button button a {
+   
     padding: 0.3rem;
 }
 
 header .gallery-button button a:hover {
-    color: var(--nav-link-color);
-    transition: all .2s;
-}
+
+} */
 
 
 /*--------- ------------- MAIN ---------  -----------------*/
@@ -236,9 +249,6 @@ main #status .stat hr {
 /* ---main gallery-- */
 main #gallery-area {
     margin: 1rem;
-    /* Color stop: A gradient going from the bottom to top,
-   starting with a color, turning to another at 40% of its length,
-   and finishing in another */
     background-color: var(--accent2-color);
     border-radius: 10px;
     margin: 2rem;
@@ -246,6 +256,8 @@ main #gallery-area {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 2px 2px 5px var(--accent2-color);
 }
 
 main  #gallery-area #gallery {
@@ -307,8 +319,28 @@ main #gallery-area .p-quote .img-two img {
 }
 
 
+/* -----------------FOOTER -------------- */
 
 
+footer {
+    box-shadow: 0px 4px 5px 6px var(--accent2-color);
+}
+
+footer .social {
+    margin: auto;
+}
+
+footer .social a img {
+    border-radius: 10px;
+    margin-inline: 0.5rem;
+}
+
+.social a:nth-child(1):hover,
+.social a:nth-child(2):hover,
+.social a:nth-child(3):hover{
+    background-color: transparent; 
+    opacity: 0.80;
+}
 
 
 /* ----------MEDIA QUERIES---------- */
@@ -322,33 +354,35 @@ main #gallery-area .p-quote .img-two img {
     }
 
     /* ---header--- */
-    header {
+    header,
+    footer {
         flex-direction: column;
     }
 
-    header nav {
-        margin: 1rem;
-    }
-
-    header .icon a img {
+    header .icon a img,
+    footer .icon a img {
         display: none;
     }
 
-    header nav {
-        margin: 0;
+    header nav,
+    footer nav {
+        margin: 0 0 0.8rem 0;
     }
 
-    header nav a {
+    header nav a,
+    footer nav a {
         padding: 0.4rem;
         font-size: 1.4rem;
         line-height: 1.4rem;  
     }
 
-    header nav a:hover {
+    header nav a:hover,
+    footer nav a:hover {
         font-size: 1.4rem;
     }
 
-    header .gallery-button button {
+    header .gallery-button a {
+        display: block;
         margin: 0.4rem;
     }
 
@@ -428,11 +462,20 @@ main #gallery-area .p-quote .img-two img {
     main #gallery-area #gallery .img-gallery img:hover {       
         transform: rotate(0) scale(1);
     }
+ 
+    /* --footer-- */
+
+    footer .social a img {
+        width: 20%;
+        margin-left: 1.3rem;
+    }
 }
 
 /* ------------mobile devices-------- */
 @media screen and (max-width: 550px) {
-    header nav {
+    header nav,
+    footer nav {
         flex-direction: column;
+        margin-bottom: 0.8rem;
     }
 }
