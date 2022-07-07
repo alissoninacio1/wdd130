@@ -72,10 +72,7 @@ footer .icon {
     margin: 0.5rem;
 }
 
-header .icon a img {
-    display: block;
-    width: 65%;
-}
+header .icon a img,
 footer .icon a img {
     display: block;
     width: 75%;
