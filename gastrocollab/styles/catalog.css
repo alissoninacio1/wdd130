@@ -112,6 +112,24 @@ footer nav a:hover {
 }
 
 
+/* ------------------------HEADER---------------------- */
+
+header .gallery-button a {
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: none;
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+ 
+    font-size: 1rem;
+}
+
+header .gallery-button a:hover {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    transition: all .2s;
+}
 
 
 
