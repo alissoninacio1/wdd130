@@ -1,0 +1,112 @@
+/* ---------------GENERAL RULES---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,700&family=Work+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: #01B637;
+  --secondary-color: #B8F1B0 ;
+  --accent1-color: #E3FCBF;
+  --accent2-color: #343a40;
+
+  --nav-link-color: #fff;
+
+  --heading-font: 'Merriweather', serif;
+  --paragraph-font: 'Work Sans', sans-serif;
+}
+
+
+/* ---------general rules------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* move scroll lightly */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+    background-color: var(--accent1-color);
+}
+
+
+
+main {
+    background-color: var(--accent1-color);
+}
+
+
+header, 
+footer {
+    background-color: var(--primary-color);
+}
+
+header {
+    box-shadow: 2px 2px 5px var(--accent2-color);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+
+/* header y footer */
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: wrap;   
+}
+
+
+header .icon,
+footer .icon {
+    margin: 0.5rem;
+}
+
+header .icon a img,
+footer .icon a img {
+    display: block;
+    width: 75%;
+}
+
+header .icon a img:hover,
+footer .icon a img:hover {
+    width: 76%;
+    transition: ease-out .2s;
+}
+
+header nav,
+footer nav {
+    display: flex;
+    margin-left: 14rem;
+}
+
+header nav a,
+footer nav a {
+    padding: 2rem;
+
+    font-size: 1.6rem;
+    font-style: var(--paragraph-font);
+
+    transition: all ease-in .2s;
+
+    /* this is used, because we don't want to change the box size when hover */
+    line-height: 1.7rem;  
+
+    text-align: center;
+}
+
+header nav a:hover,
+footer nav a:hover {
+    font-size: 1.7rem;
+    color: var(--accent1-color);
+}
