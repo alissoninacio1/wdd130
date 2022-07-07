@@ -74,7 +74,7 @@ footer .icon {
 
 header .icon a img {
     display: block;
-    width: 70%;
+    width: 65%;
 }
 footer .icon a img {
     display: block;
@@ -112,4 +112,33 @@ header nav a:hover,
 footer nav a:hover {
     font-size: 1.7rem;
     color: var(--accent1-color);
+}
+
+
+
+
+
+
+
+/* -----------------FOOTER -------------- */
+
+
+footer {
+    box-shadow: 0px 4px 5px 6px var(--accent2-color);
+}
+
+footer .social {
+    margin: auto;
+}
+
+footer .social a img {
+    border-radius: 10px;
+    margin-inline: 0.5rem;
+}
+
+.social a:nth-child(1):hover,
+.social a:nth-child(2):hover,
+.social a:nth-child(3):hover{
+    background-color: transparent; 
+    opacity: 0.80;
 }
