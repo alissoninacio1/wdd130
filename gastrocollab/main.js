@@ -14,3 +14,8 @@ ScrollReveal({
     footer .icon,
     footer nav,
     footer .social`);
+
+
+
+
+    
