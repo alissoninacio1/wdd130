@@ -116,6 +116,8 @@ footer nav a:hover {
 /* component used for header */
 
 header {
+    position: fixed; /* Make it stick/fixed */
+    top: -400px; /* Hide the navbar 50 px outside of the top view */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
