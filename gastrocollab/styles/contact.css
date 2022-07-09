@@ -157,3 +157,9 @@ footer .social a img {
     background-color: transparent; 
     opacity: 0.80;
 }
+
+footer p {
+    color: var(--nav-link-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
