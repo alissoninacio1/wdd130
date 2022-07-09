@@ -146,12 +146,14 @@ header .gallery-button a:hover {
 
 /*--------- ------------- MAIN ---------  -----------------*/
 
-main #title-container h1 {
-    font-size: 5rem;
-    color: var(--accent2-color);
-    line-height: 100%;
-    font-family: var(--heading-font);
-    text-align: center;
+main #title-container {
+    display: flex;
+    gap: 2rem;
+}
+
+#title-container .image-one {
+  width: 25%;
+  margin: 1rem;
 }
 
 #title-container .image-one img {
@@ -159,6 +161,31 @@ main #title-container h1 {
     max-height: 100%;
     border-radius: 12px;
 }
+
+main #title-container h1 {
+    font-size: 4rem;
+    color: var(--accent2-color);
+    line-height: 100%;
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 1rem ;
+    margin-top: 15%;
+
+}
+
+main .image-two {
+    margin: 0.3rem;
+}
+
+main .image-two img {
+    display: block;
+    margin: 0.3rem auto;
+    width: 60%;
+
+    border-radius: 30px;
+
+}
+
 
 
 
@@ -243,9 +270,29 @@ footer p {
         margin: 0 auto;
     }
 
-    main #title-container .text-box h1 {
+    main #title-container h1 {
         font-size: 2rem;
+    }
+
+    main #title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
     
+    #title-container .image-one {
+      width: 100%;
+      margin: 0.5rem;
+    }
+
+
+    main .image-two img {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
     }
 
 
@@ -265,6 +312,16 @@ footer p {
     footer nav {
         flex-direction: column;
         margin-bottom: 0.8rem;
+    }
+
+    main #title-container h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: -2rem;
+        left:18%;
+        right: 18%;
+        text-align: center;
+    
     }
 
 
