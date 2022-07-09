@@ -144,6 +144,22 @@ header .gallery-button a:hover {
 
 
 
+/*--------- ------------- MAIN ---------  -----------------*/
+
+main #title-container h1 {
+    font-size: 5rem;
+    color: var(--accent2-color);
+    line-height: 100%;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#title-container .image-one img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+}
+
 
 
 /* -----------------FOOTER -------------- */
@@ -218,6 +234,21 @@ footer p {
         display: block;
         margin: 0.4rem;
     }
+
+
+    #title-container .image-one img {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    main #title-container .text-box h1 {
+        font-size: 2rem;
+    
+    }
+
+
 
     /* --footer-- */
 
