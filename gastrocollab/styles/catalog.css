@@ -145,6 +145,12 @@ header .gallery-button a:hover {
 
 
 /*--------- ------------- MAIN ---------  -----------------*/
+main,
+main .food {
+    margin: 2rem;
+}
+
+
 
 main #title-container {
     display: flex;
@@ -173,6 +179,36 @@ main #title-container h1 {
 
 }
 
+
+main .food {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main .food .stat {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .food p {
+    color: var(--nav-link-color);
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+main .food img {
+    border-radius: 12px;
+}
+
+
 main .image-two {
     margin: 0.3rem;
 }
@@ -183,7 +219,6 @@ main .image-two img {
     width: 60%;
 
     border-radius: 30px;
-
 }
 
 
@@ -295,6 +330,13 @@ footer p {
         margin: 0 auto;
     }
 
+    main .food {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
 
 
     /* --footer-- */
