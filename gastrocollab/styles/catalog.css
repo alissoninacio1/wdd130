@@ -323,10 +323,11 @@ footer p {
     }
 
 
-    main .image-two img {
+    main .image-two img,
+    main .food img {
         display: block;
-        width: 70%;
-        height: 70%;
+        width: 88%;
+        height: 88%;
         margin: 0 auto;
     }
 
@@ -337,6 +338,26 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+
+    main .food p {
+        font-size: 0.9rem;
+    }
+
+    main .food .stat {
+        order: 2;
+    }
+    
+
+    main #title-container h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: -2rem;
+        left:18%;
+        right: 18%;
+        text-align: center;
+    
+    }
+
 
 
     /* --footer-- */
@@ -359,7 +380,7 @@ footer p {
     main #title-container h1 {
         font-size: 1.5rem;
         position: absolute;
-        top: -2rem;
+        top: -1.75rem;
         left:18%;
         right: 18%;
         text-align: center;
