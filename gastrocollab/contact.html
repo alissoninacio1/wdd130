@@ -44,33 +44,33 @@
         <!-- form -->
         <form method="post">      
             <input 
-                name="name" 
+                id="name"
                 type="text" 
                 class="feedback" 
                 placeholder="Name" 
-                required
-                oninput="changePlaceholderFont()"
+                minlength="2"
+                maxlength="10"
+                required               
             />   
 
             <input 
-                name="email"  
+                id="sub"
+                type="text" 
+                class="feedback" 
+                placeholder="Subject" 
+                minlength="2"
+                maxlength="10"
+                required               
+            />   
+
+            <input  
                 id="em"
                 type="email" 
                 class="feedback" 
                 placeholder="Email" 
-                required
-                oninput="changePlaceholderFont()"
+                required               
             />
 
-            <textarea 
-                name="text" 
-                class="feedback" 
-                placeholder="Comment"
-                maxlength="500"
-                minlength="10"
-                required
-                oninput="changePlaceholderFont()"
-            >
             </textarea>
 
             <button>
