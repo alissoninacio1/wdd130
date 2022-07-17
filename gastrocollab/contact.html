@@ -42,17 +42,48 @@
         </div>
 
         <!-- form -->
-        <form>
-            <label>Name</label>
-            <input type="text">
+        <form method="post">      
+            <input 
+                name="name" 
+                type="text" 
+                class="feedback" 
+                placeholder="Name" 
+                required
+                oninput="changePlaceholderFont()"
+            />   
 
-            <label>Email</label>
-            <input type="email">
-            
-            <textarea cols="30" rows="10"></textarea>
+            <input 
+                name="email"  
+                id="em"
+                type="email" 
+                class="feedback" 
+                placeholder="Email" 
+                required
+                oninput="changePlaceholderFont()"
+            />
 
-            <button type="submit">Send</button>
-        </form>
+            <textarea 
+                name="text" 
+                class="feedback" 
+                placeholder="Comment"
+                maxlength="500"
+                minlength="10"
+                required
+                oninput="changePlaceholderFont()"
+            >
+            </textarea>
+
+            <button>
+                <a 
+                    href="mailto:" 
+                    id="email"
+                    onclick="sendEmail()"
+                >
+                    
+                    Send
+                </a>
+            </button>
+          </form>
 
         <!-- paragraph section and second image -->
         <div>
@@ -105,5 +136,6 @@
         
     </footer>
     
+    <script src="programs/contact.js" defer></script>
 </body>
 </html>
