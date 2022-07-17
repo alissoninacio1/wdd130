@@ -137,18 +137,32 @@ header .gallery-button a:hover {
 main .contact-img img {
     display: block;
 
-    margin: 0.3rem auto;
+    margin: 0.5rem auto;
     width: 20%;
     height: 10%;
 
-    border-radius: 30px;   
+    border-radius: 30px;
+
+}
+
+
+
+.title-image {
+    margin: 1rem;
+}
+.title-image h1 {
+    text-align: center;
 }
 
 
 /* form */
 form { 
-    max-width:420px; 
-    margin:50px auto; 
+    max-width:40rem; 
+    margin: 2.2rem auto; 
+    background: var(--secondary-color);
+    padding: 2.5rem;
+
+    border-radius:2rem;
 }
 
 .feedback {
@@ -198,7 +212,11 @@ input:focus {
     border-radius: 5px;
 }
 
-
+main .last-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* -----------------FOOTER -------------- */
