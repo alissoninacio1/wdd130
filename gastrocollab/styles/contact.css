@@ -187,9 +187,10 @@ form {
 }
 
 
-form button {
+form a {
   font-family: var(--paragraph-font);
   width: 70%;
+  padding: 2rem;
   background: var(--primary-color);
   border-radius:5px;
   border:0;
@@ -201,7 +202,7 @@ form button {
   margin-top:-4px;
   font-weight:700;
 }
-form button:hover { 
+form a:hover { 
     background:var(--accent2-color); 
 }
 
