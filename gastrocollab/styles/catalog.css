@@ -199,9 +199,10 @@ main .food p {
     color: var(--nav-link-color);
     font-family: var(--paragraph-font);
     font-size: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) ;
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: 5px 5px 10px var(--accent2-color);
 }
 
 main .food img {

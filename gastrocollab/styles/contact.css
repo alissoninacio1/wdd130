@@ -134,7 +134,7 @@ header .gallery-button a:hover {
 
 /* -----------------MAIN -------------- */
 
-main .contact-img img {
+main .title-image .contact-img img {
     display: block;
 
     margin: 0.5rem auto;
@@ -157,7 +157,7 @@ main .contact-img img {
 
 /* form */
 form { 
-    max-width:40rem; 
+    max-width:50%; 
     margin: 2.2rem auto; 
     background: var(--secondary-color);
     padding: 2.5rem;
@@ -214,8 +214,30 @@ input:focus {
 
 main .last-paragraph {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
+    margin: 1rem; 
+
+}
+
+main .last-paragraph .contact-img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+main .last-paragraph p {  
+    width: 45%;
+
+    color: var(--nav-link-color);
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0 20px 0 20px;
+
+    box-shadow: 5px 5px 10px var(--accent2-color);
 }
 
 
@@ -291,6 +313,43 @@ footer p {
         display: block;
         margin: 0.4rem;
     }
+
+    /* ---main--- */
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main .title-image .contact-img img {
+        width: 50%;
+    }
+
+    form {
+        max-width: 80%;
+        margin-inline: auto;
+    }
+
+    ::placeholder,
+    button a {
+        font-size: 1rem;
+    }
+
+
+    main .last-paragraph {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .last-paragraph .contact-img img {
+       display: block;
+       margin-inline: auto;
+    }
+
+    main .last-paragraph p {  
+        width: 100%;
+        font-size: 0.9rem;
+    }
  
     /* --footer-- */
 
@@ -309,5 +368,9 @@ footer p {
         margin-bottom: 0.8rem;
     }
 
+    form {
+        max-width: 100%;
+        margin: 1rem;
+    }
 
 }
